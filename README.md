@@ -36,8 +36,15 @@ Server runs at `http://localhost:3002` by default (or set `PORT`). Optional env 
 
 - `OLLAMA_BASE_URL` – default `http://localhost:11434`
 - `OLLAMA_MODEL` – default `llama3.2`
+- `OLLAMA_TIMEOUT_MS` – default `120000`
 - `PORT` – default `3002`
 - `BINANCE_BASE_URL` – default `https://api.binance.com` (or your chosen API base)
+- `MARKET_SYMBOL` – default `BTCUSDT`
+- `MARKET_TIMEOUT_MS` – default `10000`
+- `MARKET_PRICE_TTL_MS` – default `5000`
+- `MARKET_KLINES_TTL_MS` – default `30000`
+- `ASK_RATE_LIMIT_WINDOW_MS` – default `60000`
+- `ASK_RATE_LIMIT_MAX` – default `30`
 
 See `.env.example` for a template.
 
