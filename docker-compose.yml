@@ -7,17 +7,4 @@ services:
       - ./.env.production
     ports:
       - "3002:3002"
-    depends_on:
-      - ollama
     restart: unless-stopped
-
-  ollama:
-    image: ollama/ollama:latest
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama:/root/.ollama
-    restart: unless-stopped
-
-volumes:
-  ollama:
