@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     env_file:
-      - ./env.production
+      - ./.env.production
     ports:
       - "3002:3002"
     depends_on:
